@@ -1,0 +1,125 @@
+@import url('./normalize.css');
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family:  Roboto, sans-serif;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: relative;
+    border: 2px black solid;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card {
+    min-width: 40vw;
+    min-height: 60vh;
+    max-width: 60vw;
+    background: linear-gradient(180deg, #81352C 0%, #501F16 42.57%, #37140B 64.06%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative; 
+}
+.card-wrap{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    /*margin: 0 auto;*/
+    padding: 0.5em;
+    padding-right: 2em;
+    min-height: 60%; 
+}
+.img-wrapper{
+    min-height: 70%;
+    min-width: 70%;
+    position: relative;
+}
+.img{
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+}
+.img-cover{
+    max-width: 65%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.title{
+    font-size: 1.5em;
+}
+.text{
+    padding: 1.5rem;
+    font-size: 1.5em;
+    text-align: center;
+}
+.text-hover:first-child{
+    margin-bottom: 1em;
+}
+.text-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: space-around;
+}
+/*section:nth-child(2){
+    display:none;
+}*/
+
+.card-2{  
+    background: linear-gradient(180deg, #F0DBD8 0%, #AD7F75 33.85%, #AD7F75 33.86%, rgba(114, 48, 31, 0.92) 66.15%);
+    transform: rotate(0.05deg);
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    bottom:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: height 2s ease-in-out;
+}
+.text-hover{
+    color: white;
+    padding: 0;
+    margin:0;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.text-hover span{
+    color: white;
+    font-weight: 600;
+}
+.card:hover .card-2{
+    height: 100%;
+}
+/*.card-backside{
+    display: none;
+}
+.card:hover .card-backside{
+    
+    min-width: 15vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #81352C;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, rgba(164, 65, 53, 0.12) 0%, rgba(108, 39, 22, 0.35) 66.15%);
+}
+*/
